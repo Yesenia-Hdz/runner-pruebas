@@ -1,0 +1,16 @@
+name: Test Runner
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  prueba-runner:
+    runs-on: [self-hosted, cicd]
+    steps:
+      - name: Mensaje de bienvenida
+        run: echo "Hola Yesenia 🚀, el runner en Azure VM está funcionando correctamente"
+
+      - name: Mostrar información del sistema
+        run: |
+          uname -a
+          lsb_release -a
