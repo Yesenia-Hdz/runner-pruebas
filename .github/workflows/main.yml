@@ -1,0 +1,13 @@
+name: Runner de prueba
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-runner:
+    runs-on: self-hosted
+    steps:
+      - name: Mostrar mensaje
+        run: echo "Hola desde el runner de Yesenia 🚀"
